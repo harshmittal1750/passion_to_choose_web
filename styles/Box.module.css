@@ -1,12 +1,30 @@
 .centreBox {
-  height: 40vh;
+  height: 35vh;
   margin-top: 10rem;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
   display: flex;
+  padding: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+  box-shadow: 0 8px 6px -6px black;
+  width: 60%;
+}
+.headTwo {
+  text-align: center;
+  padding: 1rem;
+}
+.button {
+  color: #ffffff;
+  display: flex;
+  padding: 0;
   justify-content: center;
   align-items: center;
-}
 
+  width: 60%;
+}
 @media (max-width: 768px) {
   .centreBox {
     height: 45vh;

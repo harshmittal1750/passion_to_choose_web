@@ -1,21 +1,27 @@
 import React from "react";
 import boxStyles from "../styles/Box.module.css";
-import { Container } from "reactstrap";
+import { Container, ButtonToggle } from "reactstrap";
+import "font-awesome/css/font-awesome.css";
 
 const Box = () => {
   return (
     <Container className={boxStyles.centreBox}>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
+      <h2 className={boxStyles.headTwo}>Ready for the quiz</h2>
+      <h4 className={boxStyles.headTwo}>
+        Make sure to watch all of the videos above before starting!
+      </h4>
+      <ButtonToggle
+        size="lg"
+        block
+        color="warning"
+        className="p-0"
+        style={{ borderTopLeftRadius: "0", borderTopRightRadius: "0" }}
+      >
+        Next
+        <span>
+          <i className="fa fa-arrow-right p-3"></i>
+        </span>
+      </ButtonToggle>{" "}
     </Container>
   );
 };
