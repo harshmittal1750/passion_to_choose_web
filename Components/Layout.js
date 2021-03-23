@@ -1,27 +1,28 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
-// import Bg from "../public/background.mp4";
-const Layout = () => {
-  // const videoRef = useRef();
-  // useEffect(() => {
-  //     setTimeout(()=>{
-  //         videoRef.current.play()
-  //     },5000)
-  // }, []);
-  // return (
-  //     <video
-  //         ref={videoRef}
-  //         controls
-  //         width="250"
-  //         loop
-  //         muted
-  //         >
-  //            <source {{Bg}}/>
-  //    </video>
-  //   );
-  return <div>layout</div>;
+import "bootstrap/dist/css/bootstrap.min.css";
 
-  //   TODO:CONTAINERS
+import Meta from "./Meta";
+import Header from "./Header";
+import Footer from './Footer'
+import Box from './Box'
+
+const Layout = () => {
+  return (
+    <React.Fragment>
+      <Meta />
+      <Header />
+      <Box/>
+      <Footer/>
+    </React.Fragment>
+  );
 };
 
 export default Layout;
+
+/* 
+TODO: iss file mai sabko call krke pages/index.js mai send kr rha hu 
+<Meta/>: ismai sabhi meta tags and title tag hai
+<Header/>: ismai heading of the page hai
+<Box/>: ismai box ka material hai
+<Footer/>: ismai footer strip hai
+*/

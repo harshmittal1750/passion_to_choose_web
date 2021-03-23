@@ -1,11 +1,9 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Footer from "../Components/Footer";
+import React from 'react'
 import Layout from "../Components/Layout";
-import Header from "../Components/Header";
+
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <React.Fragment>
       {/* <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -46,9 +44,7 @@ export default function Home() {
           </a>
         </div>
       </main> */}
-      <Header></Header>
-      <Footer></Footer>
-      <Layout></Layout>
-    </div>
+      <Layout/>
+    </React.Fragment>
   );
 }

@@ -1,0 +1,11 @@
+.headBg {
+  background: powderblue;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+

@@ -1,11 +1,15 @@
 import React from "react";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Main.module.css";
+
+let date = new Date();
 
 const Footer = () => {
   return (
-    <div>
-      <footer className={styles.footer}>copyright &copy;</footer>
-    </div>
+    <React.Fragment>
+      <footer className={styles.footer}>
+        copyright &copy; {date.getFullYear()} | Passion to Choose
+      </footer>
+    </React.Fragment>
   );
 };
 

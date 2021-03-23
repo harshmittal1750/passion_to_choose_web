@@ -1,0 +1,15 @@
+.centreBox {
+  height: 40vh;
+  margin-top: 10rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .centreBox {
+    height: 45vh;
+    margin-top: 6rem;
+  }
+}

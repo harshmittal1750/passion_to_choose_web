@@ -1,14 +1,14 @@
 import React from "react";
-import Head from "next/head";
+import headerStyles from "../styles/Layout.module.css";
+
 const Header = () => {
   return (
-    <div>
-      header
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-    </div>
+    <React.Fragment>
+      <div className={headerStyles.headBg}>
+        <h1 className={headerStyles.heading}>Passion To Choose</h1>
+        <p>A way to test your capabilities</p>
+      </div>
+    </React.Fragment>
   );
 };
 
