@@ -1,6 +1,6 @@
 import React from "react";
 
-import Box from "./Box";
+import Box1 from "./Box1";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
@@ -14,11 +14,6 @@ const Slider = () => {
   for (let i = 0; i < 5; i++) {
     slides.push(
       <SwiperSlide key={`slide-${i}`} tag="li">
-        {/* <img
-          src={`https://picsum.photos/id/${i + 1}/540/320`}
-          style={{ listStyle: "none", margin: "auto" }}
-          alt={`slide ${i}`}
-        /> */}
         <div
           style={{
             display: "flex",
@@ -26,7 +21,7 @@ const Slider = () => {
             padding: "1rem 0",
           }}
         >
-          <Box />
+          <Box1 />
         </div>
       </SwiperSlide>
     );

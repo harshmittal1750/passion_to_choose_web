@@ -5,22 +5,28 @@ import boxStyles from "../styles/Box.module.css";
 const Button2 = () => {
   return (
     <>
-      <ButtonToggle
-        size="lg"
-        block
-        color="warning"
-        className={boxStyles.button}
-        onClick={() => nextBtn()}
-      >
-        <span>
+      <div  className="bg-warning">
+        <ButtonToggle
+          size="lg"
+          
+          color="warning"
+          className={boxStyles.button}
+          style={{ width: "25%", float: "left", padding: "0" }}
+        >
           <i className="fa fa-arrow-left p-3"></i>
           Previous
-        </span>
-        <span>
+        </ButtonToggle>
+        <ButtonToggle
+          size="lg"
+         
+          color="warning"
+          className={boxStyles.button}
+          style={{ width: "25%", float: "right", padding: "0" }}
+        >
           Next
           <i className="fa fa-arrow-right p-3"></i>
-        </span>
-      </ButtonToggle>
+        </ButtonToggle>
+      </div>
     </>
   );
 };

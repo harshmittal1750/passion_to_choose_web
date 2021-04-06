@@ -3,7 +3,7 @@ import { ButtonToggle } from "reactstrap";
 import boxStyles from "../styles/Box.module.css";
 
 const nextBtn = () => {
-  alert("Next button clicked");
+  location.href = "/page";
 };
 
 const Button1 = () => {
