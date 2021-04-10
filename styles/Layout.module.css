@@ -1,11 +1,11 @@
 .headBg {
-  background: powderblue;
-  padding: 10px 0;
+  background: rgba(192, 192, 192, 0.8);
+  padding: 8px 0;
   text-align: center;
+  height: 6rem;
 }
 
 .heading {
   font-size: 2rem;
-  font-family: 'Times New Roman', Times, serif;
 }
 

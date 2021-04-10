@@ -1,16 +1,19 @@
+.rowWrapper {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .centreBox {
-  height: 35vh;
-  margin-top: 10rem;
-  color: #ffffff;
+  color: white;
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 0;
+  border-radius: 10px;
+  width: 60%;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: unset;
-  border-radius: 7px;
-  box-shadow: 0 8px 6px -5px black;
-  width: 50%;
 }
 
 .centerHeading {
@@ -20,14 +23,19 @@
 
 .button {
   padding: 0;
+  font-weight: 700;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .centreBox {
-    height: 50vh;
     width: 80%;
     margin-top: 5rem;
+    height: 40vh;
+  }
+
+  .centerHeading {
+    padding: 1rem 1rem 0 1rem;
   }
 }
