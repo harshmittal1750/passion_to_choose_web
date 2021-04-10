@@ -28,6 +28,20 @@
   border-top-right-radius: 0;
 }
 
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.gridItems {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 16px;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+
 @media (max-width: 991px) {
   .centreBox {
     width: 80%;
@@ -37,5 +51,14 @@
 
   .centerHeading {
     padding: 1rem 1rem 0 1rem;
+  }
+
+  .gridContainer {
+    grid-template-columns: auto;
+  }
+
+  .gridItems {
+    padding: 8px;
+    font-size: 16px;
   }
 }

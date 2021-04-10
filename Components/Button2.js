@@ -15,10 +15,10 @@ const Button2 = () => {
           color="warning"
           className={boxStyles.button}
           style={{ width: "25%", float: "left", padding: "0" }}
-          onClick={() => prevBtn()}
+          // onClick={() => prevBtn()}
         >
           <i className="fa fa-arrow-left py-3 px-1"></i>
-          Previous
+          <span className="d-none d-md-inline swiper-slide swiper-slide-prev">Previous</span>
         </ButtonToggle>
         <ButtonToggle
           size="lg"
@@ -26,7 +26,7 @@ const Button2 = () => {
           className={boxStyles.button}
           style={{ width: "25%", float: "right", padding: "0" }}
         >
-          Next
+          <span className="d-none d-md-inline">Next</span>
           <i className="fa fa-arrow-right py-3 px-1"></i>
         </ButtonToggle>
       </div>

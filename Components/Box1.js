@@ -4,14 +4,28 @@ import { Container } from "reactstrap";
 
 import Button2 from "./Button2";
 
-const Box1 = () => {
+const Box1 = (props) => {
   return (
     <Container className={boxStyles.rowWrapper}>
       <div className={boxStyles.centreBox}>
         <div className={boxStyles.centerHeading}>
-          <h2>Ready for the quiz</h2>
-          <h4>These question will help you choose the path of your life</h4>
-          <h5>No. of questions: 14</h5>
+          <h3>
+            Q{props.id}. {props.ques}
+          </h3>
+          <div className={boxStyles.gridContainer}>
+            {props.ans.map((ans, index) => {
+              return (
+                <button
+                  type="button"
+                  onClick={(a) => console.log(a.target.innerText)}
+                  key={index}
+                  className={boxStyles.gridItems}
+                >
+                  {ans}
+                </button>
+              );
+            })}
+          </div>
         </div>
         <Button2 />
       </div>

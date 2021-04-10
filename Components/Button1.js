@@ -16,7 +16,7 @@ const Button1 = () => {
         className={boxStyles.button}
         onClick={() => nextBtn()}
       >
-        Next
+        <div className="d-none d-md-inline">Next</div>
         <i className="fa fa-arrow-right py-3 px-1"></i>
       </ButtonToggle>
     </>
