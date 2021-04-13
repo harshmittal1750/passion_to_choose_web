@@ -2,12 +2,14 @@ import React from "react";
 import Box1 from "./Box1";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination } from "swiper";
+import SwiperCore, { Navigation, Pagination, EffectCoverflow } from "swiper";
 import "swiper/swiper-bundle.css";
 
 import datas from "./data";
 
-SwiperCore.use([Navigation, Pagination]);
+import Button1 from "./Button1";
+
+SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 
 const Slider = () => {
   const slides = [];
@@ -34,6 +36,8 @@ const Slider = () => {
         <Swiper
           id="main"
           navigation
+          
+          effect="coverflow"
           pagination={{ clickable: true }}
           spaceBetween={0}
           slidesPerView={1}

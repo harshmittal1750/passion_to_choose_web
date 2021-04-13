@@ -9,15 +9,19 @@ const Box1 = (props) => {
     <Container className={boxStyles.rowWrapper}>
       <div className={boxStyles.centreBox}>
         <div className={boxStyles.centerHeading}>
-          <h3>
+          <h4 className="pb-3">
             Q{props.id}. {props.ques}
-          </h3>
+          </h4>
           <div className={boxStyles.gridContainer}>
             {props.ans.map((ans, index) => {
               return (
                 <button
-                  type="button"
-                  onClick={(a) => console.log(a.target.innerText)}
+                  id="btn"
+                  type="submit"
+                  onClick={(a) => {
+                    a.preventDefault;
+                    console.log(a.target.innerText);
+                  }}
                   key={index}
                   className={boxStyles.gridItems}
                 >
@@ -27,10 +31,11 @@ const Box1 = (props) => {
             })}
           </div>
         </div>
-        <Button2 />
+        {/* <Button2 /> */}
       </div>
     </Container>
   );
 };
+
 
 export default Box1;

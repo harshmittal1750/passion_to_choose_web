@@ -10,7 +10,7 @@
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   width: 60%;
-  height: 30vh;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -18,7 +18,7 @@
 
 .centerHeading {
   text-align: center;
-  padding-top: 1rem;
+  padding: 1rem;
 }
 
 .button {
@@ -37,6 +37,8 @@
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 16px;
+  margin: 4px;
+  border-radius: 10px;
   font-size: 20px;
   text-align: center;
   color: black;
@@ -45,8 +47,8 @@
 @media (max-width: 991px) {
   .centreBox {
     width: 80%;
-    margin-top: 5rem;
-    height: 40vh;
+    margin-top: 3rem;
+    height: 55vh;
   }
 
   .centerHeading {
