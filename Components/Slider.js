@@ -7,7 +7,7 @@ import "swiper/swiper-bundle.css";
 
 import datas from "./data";
 
-import Button1 from "./Button1";
+import Box2 from "./Box2";
 
 SwiperCore.use([Navigation, Pagination]);
 

@@ -3,10 +3,17 @@ import { ButtonToggle } from "reactstrap";
 import boxStyles from "../styles/Box.module.css";
 
 const nextBtn = () => {
-  location.href = "/page";
+  let username = prompt("Enter your name: ");
+  console.log(username);
+  if (username !== "") {
+    location.href = "/page";
+    window.localStorage.setItem("Username", username);
+  } else {
+    alert("Please fill the name");
+  }
 };
 
-const Button1 = () => {
+function Button1() {
   return (
     <>
       <ButtonToggle
@@ -21,6 +28,6 @@ const Button1 = () => {
       </ButtonToggle>
     </>
   );
-};
+}
 
 export default Button1;
