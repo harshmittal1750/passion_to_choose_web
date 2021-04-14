@@ -7,8 +7,6 @@ import "swiper/swiper-bundle.css";
 
 import datas from "./data";
 
-import Box2 from "./Box2";
-
 SwiperCore.use([Navigation, Pagination]);
 
 const Slider = () => {
