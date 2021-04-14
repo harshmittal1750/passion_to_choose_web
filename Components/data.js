@@ -1,8 +1,8 @@
 const data = [
   {
     id: 1,
-    ques: "What is your height?",
-    ans: [10, 20, 30, 40],
+    ques: "What are you planning to do after 12th?",
+    ans: ["pursuing studies", "finding jobs", "take a break", "waste some time"],
   },
   {
     id: 2,

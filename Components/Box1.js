@@ -31,7 +31,7 @@ const Box1 = (props) => {
             })}
           </div>
         </div>
-        {/* <Button2 /> */}
+        <Button2 />
       </div>
     </Container>
   );

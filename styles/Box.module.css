@@ -18,12 +18,13 @@
 
 .centerHeading {
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .button {
   padding: 0;
   font-weight: 700;
+  border-radius: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -39,7 +40,7 @@
   padding: 16px;
   margin: 4px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   color: black;
 }
